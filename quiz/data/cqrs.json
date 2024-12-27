@@ -1,0 +1,171 @@
+[{
+        "question": "Mô hình CQRS được sử dụng để làm gì?",
+        "answers": ["Tách biệt logic ghi và đọc", "Tăng hiệu suất cơ sở dữ liệu", "Tạo giao diện người dùng", "Quản lý vòng đời dịch vụ"],
+        "correctIndex": 0,
+        "explanation": "CQRS (Command Query Responsibility Segregation) là một mô hình được sử dụng để tách biệt logic ghi (Command) và đọc (Query), giúp tối ưu hóa hiệu suất và giảm độ phức tạp."
+    },
+    {
+        "question": "Trong mô hình CQRS, Command được sử dụng để làm gì?",
+        "answers": ["Thay đổi trạng thái của hệ thống", "Truy vấn dữ liệu", "Tối ưu hóa giao diện người dùng", "Tăng khả năng đọc dữ liệu"],
+        "correctIndex": 0,
+        "explanation": "Command trong CQRS được sử dụng để thực hiện các hành động làm thay đổi trạng thái của hệ thống, chẳng hạn như thêm, cập nhật hoặc xóa dữ liệu."
+    },
+    {
+        "question": "Query trong CQRS có đặc điểm gì?",
+        "answers": ["Không thay đổi trạng thái của hệ thống", "Tăng hiệu suất ghi dữ liệu", "Tự động cập nhật cơ sở dữ liệu", "Quản lý giao dịch"],
+        "correctIndex": 0,
+        "explanation": "Query trong CQRS được sử dụng để truy vấn thông tin từ hệ thống mà không làm thay đổi trạng thái của hệ thống."
+    },
+    {
+        "question": "Lợi ích chính của CQRS là gì?",
+        "answers": ["Tối ưu hóa hiệu suất đọc và ghi", "Tăng tốc độ xử lý giao diện người dùng", "Loại bỏ hoàn toàn sự phụ thuộc vào cơ sở dữ liệu", "Hợp nhất logic đọc và ghi"],
+        "correctIndex": 0,
+        "explanation": "CQRS tối ưu hóa hiệu suất bằng cách tách biệt logic đọc và ghi, cho phép mỗi phần được triển khai và tối ưu hóa độc lập."
+    },
+    {
+        "question": "Event Sourcing thường được sử dụng trong CQRS để làm gì?",
+        "answers": ["Lưu trữ toàn bộ lịch sử sự kiện thay đổi", "Tăng hiệu suất giao diện", "Cải thiện tốc độ ghi dữ liệu", "Tự động tạo báo cáo"],
+        "correctIndex": 0,
+        "explanation": "Event Sourcing trong CQRS lưu trữ toàn bộ lịch sử sự kiện thay đổi trong hệ thống, cho phép tái tạo trạng thái hiện tại bằng cách phát lại các sự kiện."
+    },
+    {
+        "question": "Trong CQRS, Command thường được xử lý bởi thành phần nào?",
+        "answers": ["Command Handler", "Query Processor", "Event Handler", "Database Adapter"],
+        "correctIndex": 0,
+        "explanation": "Command Handler là thành phần trong CQRS chịu trách nhiệm xử lý các lệnh (Command) để thực hiện các thay đổi trạng thái trong hệ thống."
+    },
+    {
+        "question": "Tại sao mô hình CQRS phù hợp với hệ thống có khối lượng đọc lớn hơn ghi?",
+        "answers": ["Cho phép tối ưu hóa logic đọc độc lập với logic ghi", "Giảm số lượng Command cần thiết", "Loại bỏ yêu cầu cập nhật dữ liệu", "Hỗ trợ nhiều ngôn ngữ lập trình"],
+        "correctIndex": 0,
+        "explanation": "CQRS cho phép tối ưu hóa logic đọc (Query) độc lập với logic ghi (Command), giúp cải thiện hiệu suất trong hệ thống có nhiều thao tác đọc hơn ghi."
+    },
+    {
+        "question": "Trong CQRS, cơ sở dữ liệu của Command và Query thường như thế nào?",
+        "answers": ["Được tách biệt để tối ưu hóa hiệu suất", "Chung để giảm độ phức tạp", "Được lưu trong bộ nhớ cache", "Được quản lý bởi một API Gateway"],
+        "correctIndex": 0,
+        "explanation": "Trong CQRS, cơ sở dữ liệu của Command và Query thường được tách biệt để tối ưu hóa hiệu suất và giảm xung đột khi thực hiện các thao tác ghi và đọc."
+    },
+    {
+        "question": "Một hạn chế của CQRS là gì?",
+        "answers": ["Tăng độ phức tạp trong thiết kế và triển khai", "Không thể áp dụng cho hệ thống lớn", "Giảm hiệu suất đọc dữ liệu", "Chỉ hỗ trợ cơ sở dữ liệu quan hệ"],
+        "correctIndex": 0,
+        "explanation": "CQRS có thể làm tăng độ phức tạp trong thiết kế và triển khai hệ thống do việc tách biệt logic đọc và ghi, cũng như yêu cầu đồng bộ hóa dữ liệu giữa hai cơ sở dữ liệu."
+    },
+    {
+        "question": "Khi nào nên sử dụng CQRS trong hệ thống?",
+        "answers": ["Khi cần tối ưu hóa hiệu suất cho các thao tác đọc và ghi phức tạp", "Khi hệ thống có ít yêu cầu ghi dữ liệu", "Khi hệ thống không yêu cầu đồng bộ dữ liệu", "Khi chỉ có một dịch vụ đơn lẻ"],
+        "correctIndex": 0,
+        "explanation": "CQRS phù hợp cho các hệ thống cần tối ưu hóa hiệu suất cho các thao tác đọc và ghi phức tạp, hoặc có yêu cầu đặc thù như khối lượng đọc lớn hơn ghi."
+    },
+    {
+        "question": "Discovery Server có thể được triển khai như thế nào để đảm bảo tính sẵn sàng cao?",
+        "answers": ["Thiết lập nhiều bản sao của Discovery Server", "Lưu trữ thông tin dịch vụ trong cơ sở dữ liệu", "Chạy trên một máy chủ duy nhất", "Sử dụng FTP để chia sẻ thông tin"],
+        "correctIndex": 0,
+        "explanation": "Để đảm bảo tính sẵn sàng cao, nhiều bản sao của Discovery Server có thể được triển khai trong một cụm (cluster), giúp hệ thống hoạt động liên tục ngay cả khi một bản sao bị lỗi."
+    },
+    {
+        "question": "Thông tin nào thường được lưu trữ trong Discovery Server?",
+        "answers": ["Tên dịch vụ, địa chỉ URL, trạng thái", "Dữ liệu người dùng", "Cấu hình giao diện người dùng", "Lịch sử truy vấn"],
+        "correctIndex": 0,
+        "explanation": "Discovery Server lưu trữ thông tin cần thiết để các dịch vụ có thể tìm kiếm và giao tiếp với nhau, bao gồm tên dịch vụ, địa chỉ URL và trạng thái hoạt động."
+    },
+    {
+        "question": "Lợi ích chính của việc sử dụng client-side load balancing với Discovery Client là gì?",
+        "answers": ["Phân phối tải trực tiếp từ phía client dựa trên danh sách dịch vụ từ Discovery Server", "Giảm chi phí lưu trữ dữ liệu", "Loại bỏ nhu cầu sử dụng Discovery Server", "Tăng khả năng giao tiếp với cơ sở dữ liệu"],
+        "correctIndex": 0,
+        "explanation": "Client-side load balancing cho phép client tự phân phối tải dựa trên danh sách các dịch vụ từ Discovery Server, giúp giảm bớt áp lực cho máy chủ."
+    },
+    {
+        "question": "Spring Cloud Eureka hỗ trợ chế độ nào để tối ưu hóa hiệu suất của Discovery Server?",
+        "answers": ["Peer-to-Peer Replication", "Primary-Backup Model", "Direct Database Synchronization", "Single-Node Only"],
+        "correctIndex": 0,
+        "explanation": "Spring Cloud Eureka hỗ trợ Peer-to-Peer Replication, trong đó các bản sao của Discovery Server đồng bộ với nhau, đảm bảo thông tin luôn cập nhật và sẵn sàng."
+    },
+    {
+        "question": "Trong Spring Cloud Eureka, cờ `prefer-ip-address` được sử dụng để làm gì?",
+        "answers": ["Ưu tiên sử dụng địa chỉ IP thay vì hostname", "Tăng hiệu suất giao tiếp với cơ sở dữ liệu", "Cho phép các dịch vụ ẩn danh truy cập", "Giảm thời gian heartbeat"],
+        "correctIndex": 0,
+        "explanation": "Cờ `prefer-ip-address` trong Spring Cloud Eureka được sử dụng để ưu tiên sử dụng địa chỉ IP thay vì hostname, giúp giảm các vấn đề về DNS."
+    },
+    {
+        "question": "Tại sao Discovery Client cần gửi heartbeat đến Discovery Server?",
+        "answers": ["Để xác nhận rằng dịch vụ vẫn đang hoạt động", "Để cập nhật giao diện người dùng", "Để giảm lưu lượng truy cập mạng", "Để gửi dữ liệu người dùng"],
+        "correctIndex": 0,
+        "explanation": "Discovery Client gửi heartbeat đến Discovery Server để xác nhận rằng dịch vụ vẫn đang hoạt động, giúp duy trì danh sách dịch vụ chính xác và cập nhật."
+    },
+    {
+        "question": "Khi Discovery Client không thể tìm thấy dịch vụ, bước nào thường được thực hiện tiếp theo?",
+        "answers": ["Truy xuất thông tin từ Discovery Server khác", "Dừng hoạt động dịch vụ", "Xóa dịch vụ khỏi hệ thống", "Lưu trữ thông tin vào cơ sở dữ liệu"],
+        "correctIndex": 0,
+        "explanation": "Nếu Discovery Client không thể tìm thấy dịch vụ, nó có thể thử truy xuất thông tin từ một Discovery Server khác (nếu có triển khai nhiều bản sao)."
+    },
+    {
+        "question": "API Gateway thường tích hợp với Discovery Server như thế nào?",
+        "answers": ["Lấy danh sách dịch vụ từ Discovery Server để định tuyến yêu cầu", "Lưu trữ dữ liệu người dùng", "Xử lý tất cả các dịch vụ ở mức code", "Cập nhật cấu hình dịch vụ tự động"],
+        "correctIndex": 0,
+        "explanation": "API Gateway tích hợp với Discovery Server để lấy danh sách các dịch vụ hiện có và định tuyến yêu cầu đến dịch vụ phù hợp."
+    }, {
+        "question": "Một hạn chế của việc sử dụng Discovery Server là gì?",
+        "answers": ["Có thể trở thành điểm nghẽn nếu không được triển khai đúng cách", "Không thể tích hợp với hệ thống hiện có", "Không hỗ trợ client-side load balancing", "Không hỗ trợ microservices"],
+        "correctIndex": 0,
+        "explanation": "Discovery Server có thể trở thành điểm nghẽn trong hệ thống nếu không được triển khai với tính sẵn sàng cao hoặc không được cấu hình tối ưu."
+    }, {
+        "question": "Đâu là cơ chế thay thế nếu Discovery Server không hoạt động?",
+        "answers": ["Cache danh sách dịch vụ trên client", "Tắt tất cả các dịch vụ", "Chuyển sang cơ sở dữ liệu quan hệ", "Tăng thời gian heartbeat"],
+        "correctIndex": 0,
+        "explanation": "Nếu Discovery Server không hoạt động, một cơ chế thay thế phổ biến là cache danh sách dịch vụ trên client, giúp hệ thống tiếp tục hoạt động trong một thời gian nhất định."
+    },
+    {
+        "question": "Discovery Server trong hệ thống microservices thường được cấu hình với thông tin nào?",
+        "answers": ["Danh sách các cổng dịch vụ", "Cấu hình kết nối cơ sở dữ liệu", "Đường dẫn URL và metadata của các dịch vụ đã đăng ký", "Thông tin người dùng và mật khẩu"],
+        "correctIndex": 2,
+        "explanation": "Discovery Server lưu trữ đường dẫn URL và metadata của các dịch vụ đã đăng ký, giúp các dịch vụ khác có thể tìm kiếm và giao tiếp hiệu quả."
+    }, {
+        "question": "Spring Cloud Eureka hỗ trợ chế độ nào để các dịch vụ vẫn hoạt động khi Discovery Server không khả dụng?",
+        "answers": ["Self-preservation mode", "Fail-fast mode", "Auto-recovery mode", "Heartbeat skipping"],
+        "correctIndex": 0,
+        "explanation": "Self-preservation mode của Eureka cho phép các dịch vụ tiếp tục hoạt động dựa trên dữ liệu đã được lưu trong bộ nhớ cache, ngay cả khi Discovery Server không khả dụng."
+    }, {
+        "question": "Trong Discovery Server, thông tin của dịch vụ không còn gửi heartbeat sẽ xảy ra điều gì?",
+        "answers": ["Dịch vụ sẽ bị xóa khỏi registry", "Dịch vụ sẽ chuyển sang trạng thái tạm ngừng", "Dịch vụ sẽ bị tự động khởi động lại", "Dịch vụ sẽ được ưu tiên cập nhật"],
+        "correctIndex": 0,
+        "explanation": "Nếu một dịch vụ không gửi heartbeat trong thời gian quy định, nó sẽ bị xóa khỏi registry để đảm bảo rằng chỉ các dịch vụ đang hoạt động mới được liệt kê."
+    }, {
+        "question": "Discovery Server có thể giúp giảm sự phụ thuộc giữa các dịch vụ bằng cách nào?",
+        "answers": ["Cung cấp một cơ chế tìm kiếm dịch vụ trung gian", "Tự động cập nhật cấu hình dịch vụ", "Lưu trữ dữ liệu dịch vụ trong cơ sở dữ liệu", "Tăng hiệu suất giao tiếp qua API"],
+        "correctIndex": 0,
+        "explanation": "Discovery Server cung cấp một cơ chế tìm kiếm dịch vụ trung gian, giúp các dịch vụ không cần biết trực tiếp vị trí của nhau, từ đó giảm sự phụ thuộc."
+    }, {
+        "question": "Trong Spring Cloud Eureka, các dịch vụ thường được đăng ký bằng cách nào?",
+        "answers": ["Tự động đăng ký khi ứng dụng khởi động", "Thông qua file cấu hình tĩnh", "Qua kết nối FTP", "Bằng cách gửi email thông báo"],
+        "correctIndex": 0,
+        "explanation": "Trong Spring Cloud Eureka, các dịch vụ thường được tự động đăng ký vào Discovery Server khi ứng dụng khởi động, dựa trên cấu hình đã được thiết lập."
+    }, {
+        "question": "Lợi ích chính của việc sử dụng một cụm Discovery Server là gì?",
+        "answers": ["Tăng tính sẵn sàng và khả năng chịu lỗi của hệ thống", "Giảm thời gian khởi động dịch vụ", "Tăng tốc độ xử lý API", "Loại bỏ nhu cầu sử dụng cơ sở dữ liệu"],
+        "correctIndex": 0,
+        "explanation": "Triển khai một cụm Discovery Server giúp tăng tính sẵn sàng và khả năng chịu lỗi của hệ thống, đảm bảo các dịch vụ vẫn có thể tìm thấy nhau ngay cả khi một hoặc nhiều nút trong cụm gặp sự cố."
+    }, {
+        "question": "Tại sao caching lại quan trọng trong Discovery Client?",
+        "answers": ["Để giảm tải cho Discovery Server", "Để tăng thời gian phản hồi của cơ sở dữ liệu", "Để lưu trữ dữ liệu người dùng", "Để quản lý heartbeat hiệu quả hơn"],
+        "correctIndex": 0,
+        "explanation": "Caching cho phép Discovery Client lưu trữ thông tin dịch vụ cục bộ, giảm số lượng yêu cầu tới Discovery Server và cải thiện hiệu năng hệ thống."
+    }, {
+        "question": "Trong hệ thống sử dụng Discovery Server, làm thế nào để phát hiện một dịch vụ bị lỗi?",
+        "answers": ["Dựa vào việc không nhận được heartbeat từ dịch vụ đó", "Dựa vào thông tin từ cơ sở dữ liệu", "Dựa vào giao diện người dùng", "Dựa vào cấu hình tĩnh"],
+        "correctIndex": 0,
+        "explanation": "Discovery Server sử dụng cơ chế heartbeat để phát hiện trạng thái của các dịch vụ. Nếu không nhận được heartbeat trong khoảng thời gian quy định, dịch vụ đó sẽ được coi là không khả dụng."
+    }, {
+        "question": "Sử dụng Spring Cloud Ribbon cùng với Discovery Server mang lại lợi ích gì?",
+        "answers": ["Cung cấp client-side load balancing", "Tăng khả năng tương thích với các hệ thống khác", "Tự động khởi động lại các dịch vụ không khả dụng", "Loại bỏ sự cần thiết của API Gateway"],
+        "correctIndex": 0,
+        "explanation": "Spring Cloud Ribbon tích hợp với Discovery Server để cung cấp cơ chế client-side load balancing, giúp phân phối yêu cầu giữa các instance của dịch vụ một cách hiệu quả."
+    }, {
+        "question": "Trong hệ thống microservices, thông tin của dịch vụ được cập nhật trong Discovery Server thông qua cơ chế nào?",
+        "answers": ["Heartbeat và cập nhật metadata", "Lưu trữ vào cơ sở dữ liệu", "Tự động đồng bộ hóa qua FTP", "Gửi thông báo qua email"],
+        "correctIndex": 0,
+        "explanation": "Discovery Server sử dụng cơ chế heartbeat và cập nhật metadata để đảm bảo thông tin dịch vụ luôn chính xác và cập nhật trong hệ thống."
+    }
+
+]

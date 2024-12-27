@@ -1,0 +1,175 @@
+[{
+        "question": "Event Sourcing được sử dụng để làm gì?",
+        "answers": ["Lưu trữ trạng thái hệ thống dưới dạng các sự kiện", "Tăng tốc độ truy vấn cơ sở dữ liệu", "Quản lý giao diện người dùng", "Thay thế cơ sở dữ liệu truyền thống"],
+        "correctIndex": 0,
+        "explanation": "Event Sourcing là một mô hình lưu trữ trong đó trạng thái của hệ thống được lưu giữ bằng cách ghi lại toàn bộ các sự kiện đã xảy ra thay vì lưu trữ trực tiếp trạng thái hiện tại."
+    }, {
+        "question": "Event trong Event Sourcing là gì?",
+        "answers": ["Một sự thay đổi trạng thái của hệ thống", "Một truy vấn cơ sở dữ liệu", "Một thông báo lỗi", "Một yêu cầu HTTP"],
+        "correctIndex": 0,
+        "explanation": "Event trong Event Sourcing là một sự thay đổi trạng thái của hệ thống, được ghi lại để tái hiện hoặc tái tạo trạng thái hiện tại khi cần thiết."
+    }, {
+        "question": "Lợi ích chính của Event Sourcing là gì?",
+        "answers": ["Lưu giữ toàn bộ lịch sử thay đổi trạng thái", "Tăng hiệu suất ghi dữ liệu", "Tự động phát hiện lỗi logic", "Giảm chi phí lưu trữ"],
+        "correctIndex": 0,
+        "explanation": "Event Sourcing lưu giữ toàn bộ lịch sử các thay đổi trạng thái của hệ thống, giúp dễ dàng tái tạo trạng thái hiện tại và kiểm tra lịch sử hoạt động."
+    }, {
+        "question": "Trong Event Sourcing, làm thế nào để tái tạo trạng thái hiện tại của hệ thống?",
+        "answers": ["Phát lại toàn bộ các sự kiện đã ghi lại", "Truy vấn cơ sở dữ liệu trực tiếp", "Sử dụng file cấu hình tĩnh", "Thực hiện lại các lệnh (commands)"],
+        "correctIndex": 0,
+        "explanation": "Trạng thái hiện tại của hệ thống trong Event Sourcing được tái tạo bằng cách phát lại toàn bộ các sự kiện đã được ghi lại từ trước."
+    }, {
+        "question": "Event Store trong Event Sourcing có vai trò gì?",
+        "answers": ["Lưu trữ tất cả các sự kiện xảy ra trong hệ thống", "Quản lý các Command", "Tăng tốc độ đọc dữ liệu", "Tạo báo cáo từ các sự kiện"],
+        "correctIndex": 0,
+        "explanation": "Event Store là thành phần chính trong Event Sourcing, được sử dụng để lưu trữ toàn bộ các sự kiện xảy ra trong hệ thống theo thứ tự thời gian."
+    },
+    {
+        "question": "Một hạn chế của Event Sourcing là gì?",
+        "answers": ["Yêu cầu xử lý phức tạp để tái tạo trạng thái hiện tại", "Không lưu trữ được dữ liệu lớn", "Không hỗ trợ tính toán thời gian thực", "Tăng độ trễ cho các yêu cầu HTTP"],
+        "correctIndex": 0,
+        "explanation": "Event Sourcing yêu cầu xử lý phức tạp để tái tạo trạng thái hiện tại từ các sự kiện, đặc biệt trong các hệ thống có lượng dữ liệu lớn."
+    }, {
+        "question": "Event Sourcing thường được sử dụng kết hợp với mô hình nào?",
+        "answers": ["CQRS", "Client-Server", "Monolithic", "Peer-to-Peer"],
+        "correctIndex": 0,
+        "explanation": "Event Sourcing thường được sử dụng kết hợp với CQRS để tối ưu hóa việc quản lý trạng thái và đồng bộ hóa dữ liệu giữa Command và Query Side."
+    }, {
+        "question": "Trong Event Sourcing, làm thế nào để xử lý một sự kiện không hợp lệ?",
+        "answers": ["Ghi lại một sự kiện mới để sửa lỗi", "Xóa sự kiện khỏi Event Store", "Thay đổi trạng thái trực tiếp", "Sử dụng một cơ sở dữ liệu phụ trợ"],
+        "correctIndex": 0,
+        "explanation": "Trong Event Sourcing, thay vì xóa hoặc chỉnh sửa sự kiện không hợp lệ, một sự kiện mới sẽ được ghi lại để sửa lỗi, đảm bảo tính toàn vẹn của lịch sử."
+    }, {
+        "question": "Event Sourcing có lợi ích gì trong việc kiểm tra và gỡ lỗi?",
+        "answers": ["Cung cấp lịch sử chi tiết của tất cả các thay đổi trạng thái", "Giảm khối lượng mã nguồn", "Tăng tốc độ chạy kiểm tra", "Loại bỏ nhu cầu Unit Test"],
+        "correctIndex": 0,
+        "explanation": "Event Sourcing lưu giữ lịch sử chi tiết của tất cả các thay đổi trạng thái, giúp dễ dàng kiểm tra và gỡ lỗi hệ thống bằng cách phân tích các sự kiện đã xảy ra."
+    }, {
+        "question": "Eventual Consistency trong Event Sourcing có ý nghĩa gì?",
+        "answers": ["Trạng thái cuối cùng của hệ thống sẽ đồng bộ sau một khoảng thời gian nhất định", "Tất cả các sự kiện được xử lý ngay lập tức", "Dữ liệu luôn chính xác tức thì", "Không cần phải đồng bộ hóa dữ liệu"],
+        "correctIndex": 0,
+        "explanation": "Eventual Consistency đảm bảo rằng trạng thái cuối cùng của hệ thống sẽ được đồng bộ hóa sau một khoảng thời gian nhất định, phù hợp với các hệ thống phân tán."
+    },
+    {
+        "question": "Event Store trong Event Sourcing thường lưu trữ dữ liệu theo cấu trúc nào?",
+        "answers": ["Danh sách các sự kiện theo thứ tự thời gian", "Dữ liệu trạng thái hiện tại", "Cấu trúc bảng quan hệ", "Định dạng JSON tĩnh"],
+        "correctIndex": 0,
+        "explanation": "Event Store lưu trữ danh sách các sự kiện theo thứ tự thời gian, cho phép dễ dàng tái tạo trạng thái hiện tại của hệ thống."
+    },
+    {
+        "question": "Event Sourcing có thể giúp khôi phục trạng thái hệ thống trong trường hợp nào?",
+        "answers": ["Khi xảy ra lỗi hoặc mất dữ liệu", "Khi cơ sở dữ liệu bị khóa", "Khi không có kết nối mạng", "Khi giao diện người dùng không hoạt động"],
+        "correctIndex": 0,
+        "explanation": "Event Sourcing cho phép khôi phục trạng thái hệ thống bằng cách phát lại các sự kiện, đặc biệt hữu ích khi xảy ra lỗi hoặc mất dữ liệu."
+    },
+    {
+        "question": "Làm thế nào để xử lý các sự kiện cũ trong Event Sourcing?",
+        "answers": ["Lưu trữ các sự kiện trong kho lưu trữ (archive)", "Xóa sự kiện cũ định kỳ", "Tự động nén dữ liệu", "Chuyển sang hệ thống cơ sở dữ liệu truyền thống"],
+        "correctIndex": 0,
+        "explanation": "Các sự kiện cũ thường được lưu trữ trong kho lưu trữ (archive) để giảm tải cho hệ thống chính nhưng vẫn giữ được lịch sử đầy đủ."
+    },
+    {
+        "question": "Một ứng dụng phổ biến của Event Sourcing là gì?",
+        "answers": ["Hệ thống giao dịch tài chính", "Trình duyệt web", "Hệ thống quản lý tệp", "Ứng dụng máy tính cá nhân"],
+        "correctIndex": 0,
+        "explanation": "Event Sourcing rất phù hợp cho các hệ thống giao dịch tài chính vì nó lưu giữ toàn bộ lịch sử thay đổi, đảm bảo tính minh bạch và khả năng kiểm tra."
+    },
+    {
+        "question": "Trong Event Sourcing, Aggregate đóng vai trò gì?",
+        "answers": ["Tập hợp các sự kiện liên quan đến một thực thể", "Quản lý giao diện người dùng", "Thực hiện các lệnh truy vấn", "Lưu trữ dữ liệu tạm thời"],
+        "correctIndex": 0,
+        "explanation": "Aggregate trong Event Sourcing là tập hợp các sự kiện liên quan đến một thực thể hoặc một nhóm thực thể, giúp quản lý trạng thái của chúng."
+    },
+    {
+        "question": "Lợi ích của việc sử dụng Snapshot trong Event Sourcing là gì?",
+        "answers": ["Giảm thời gian tái tạo trạng thái", "Loại bỏ các sự kiện cũ", "Tăng hiệu suất truy vấn", "Tự động hóa cập nhật dữ liệu"],
+        "correctIndex": 0,
+        "explanation": "Snapshot lưu trạng thái hiện tại của hệ thống tại một thời điểm nhất định, giúp giảm thời gian tái tạo trạng thái từ toàn bộ danh sách sự kiện."
+    },
+    {
+        "question": "Eventual Consistency trong Event Sourcing có thể gây ra vấn đề gì?",
+        "answers": ["Thời gian đồng bộ lâu hơn mong đợi", "Dữ liệu không được lưu trữ đầy đủ", "Tăng chi phí lưu trữ", "Gây lỗi hệ thống"],
+        "correctIndex": 0,
+        "explanation": "Eventual Consistency có thể gây ra vấn đề khi trạng thái dữ liệu không đồng bộ ngay lập tức, dẫn đến các hành động không chính xác trong một khoảng thời gian ngắn."
+    },
+    {
+        "question": "Làm thế nào để tối ưu hóa Event Store trong các hệ thống lớn?",
+        "answers": ["Sử dụng phân vùng (partitioning)", "Gộp toàn bộ dữ liệu vào một bảng", "Lưu trữ dữ liệu ở định dạng tĩnh", "Loại bỏ các sự kiện nhỏ lẻ"],
+        "correctIndex": 0,
+        "explanation": "Sử dụng phân vùng (partitioning) giúp chia nhỏ Event Store thành các phần dễ quản lý hơn, giảm tải cho hệ thống và tăng hiệu suất."
+    },
+    {
+        "question": "Khi sử dụng Event Sourcing, cách nào để đảm bảo sự kiện không bị mất?",
+        "answers": ["Sử dụng hệ thống lưu trữ sự kiện đáng tin cậy", "Lưu trữ các sự kiện vào bộ nhớ tạm", "Chỉ lưu trữ sự kiện quan trọng", "Không cần đảm bảo tính toàn vẹn của dữ liệu"],
+        "correctIndex": 0,
+        "explanation": "Một Event Store đáng tin cậy đảm bảo rằng tất cả các sự kiện đều được lưu trữ an toàn và không bị mất, ngay cả khi xảy ra lỗi hệ thống."
+    },
+    {
+        "question": "Tại sao Event Sourcing phù hợp với các hệ thống cần audit log?",
+        "answers": ["Lưu giữ toàn bộ lịch sử các thay đổi", "Tự động tạo báo cáo", "Tăng tốc độ xử lý giao dịch", "Giảm chi phí lưu trữ"],
+        "correctIndex": 0,
+        "explanation": "Event Sourcing lưu giữ toàn bộ lịch sử các thay đổi trong hệ thống, giúp dễ dàng tạo audit log và kiểm tra tính minh bạch của hệ thống."
+    },
+    {
+        "question": "Trong Event Sourcing, sự kiện được lưu trữ theo cách nào để đảm bảo tính toàn vẹn dữ liệu?",
+        "answers": ["Ghi bất biến (immutable)", "Ghi đè lên các sự kiện cũ", "Sử dụng tệp tạm thời", "Lưu trữ chỉ trong bộ nhớ"],
+        "correctIndex": 0,
+        "explanation": "Trong Event Sourcing, các sự kiện được lưu trữ dưới dạng bất biến (immutable), nghĩa là không thể chỉnh sửa hoặc xóa sau khi đã ghi lại, để đảm bảo tính toàn vẹn của dữ liệu."
+    },
+    {
+        "question": "Snapshot trong Event Sourcing thường được tạo ra khi nào?",
+        "answers": ["Sau một số lượng sự kiện nhất định", "Sau mỗi sự kiện", "Khi hệ thống khởi động", "Khi dữ liệu được tải lên"],
+        "correctIndex": 0,
+        "explanation": "Snapshot thường được tạo ra sau một số lượng sự kiện nhất định để giảm thời gian tái tạo trạng thái từ toàn bộ danh sách sự kiện."
+    },
+    {
+        "question": "Event Metadata thường chứa thông tin gì trong Event Sourcing?",
+        "answers": ["Thời gian xảy ra sự kiện và nguồn sự kiện", "Dữ liệu trạng thái hiện tại", "Thông tin người dùng đăng nhập", "Cấu trúc cơ sở dữ liệu"],
+        "correctIndex": 0,
+        "explanation": "Event Metadata bao gồm thông tin như thời gian xảy ra sự kiện, nguồn của sự kiện, và các chi tiết cần thiết để hiểu ngữ cảnh của sự kiện."
+    },
+    {
+        "question": "Tại sao Event Sourcing có thể hỗ trợ tốt cho tính năng phân tích dữ liệu lịch sử?",
+        "answers": ["Lưu giữ toàn bộ lịch sử thay đổi trạng thái", "Tự động tạo báo cáo", "Hỗ trợ mô hình cơ sở dữ liệu quan hệ", "Loại bỏ sự kiện không cần thiết"],
+        "correctIndex": 0,
+        "explanation": "Vì Event Sourcing lưu giữ toàn bộ lịch sử các thay đổi trạng thái, hệ thống có thể dễ dàng phân tích dữ liệu lịch sử và đưa ra các thông tin chi tiết quan trọng."
+    },
+    {
+        "question": "Trong Event Sourcing, làm thế nào để mở rộng quy mô Event Store?",
+        "answers": ["Sử dụng sharding hoặc phân cụm", "Lưu trữ sự kiện trên tệp văn bản", "Xóa các sự kiện cũ", "Giảm tần suất lưu trữ sự kiện"],
+        "correctIndex": 0,
+        "explanation": "Sharding hoặc phân cụm (clustering) là cách phổ biến để mở rộng quy mô Event Store, cho phép chia nhỏ dữ liệu sự kiện trên nhiều nút để tăng hiệu suất."
+    },
+    {
+        "question": "Khi nào không nên sử dụng Event Sourcing?",
+        "answers": ["Khi ứng dụng chỉ cần quản lý trạng thái hiện tại đơn giản", "Khi hệ thống yêu cầu lưu trữ lịch sử chi tiết", "Khi cần hỗ trợ audit log", "Khi muốn tái tạo trạng thái từ lịch sử"],
+        "correctIndex": 0,
+        "explanation": "Event Sourcing không phù hợp với các ứng dụng chỉ cần quản lý trạng thái hiện tại đơn giản, vì độ phức tạp của mô hình sẽ không cần thiết."
+    },
+    {
+        "question": "Trong Event Sourcing, làm thế nào để xử lý sự kiện trùng lặp?",
+        "answers": ["Sử dụng ID sự kiện duy nhất", "Ghi đè sự kiện cũ", "Xóa toàn bộ danh sách sự kiện", "Tạo bản sao của sự kiện"],
+        "correctIndex": 0,
+        "explanation": "Mỗi sự kiện trong Event Sourcing đều có một ID duy nhất, giúp phát hiện và tránh xử lý trùng lặp sự kiện."
+    },
+    {
+        "question": "Một thách thức lớn khi sử dụng Event Sourcing là gì?",
+        "answers": ["Tăng độ phức tạp trong quản lý và tái tạo trạng thái", "Không thể lưu trữ lịch sử", "Hạn chế khả năng mở rộng", "Giảm hiệu suất đọc dữ liệu"],
+        "correctIndex": 0,
+        "explanation": "Một thách thức lớn của Event Sourcing là tăng độ phức tạp trong quản lý và tái tạo trạng thái từ các sự kiện, đặc biệt trong hệ thống lớn."
+    },
+    {
+        "question": "Event Sourcing giúp ích gì trong việc xử lý dữ liệu phân tán?",
+        "answers": ["Ghi lại các sự kiện trên từng nút trong hệ thống", "Giảm thời gian truyền dữ liệu", "Loại bỏ sự cần thiết của đồng bộ hóa", "Tăng hiệu suất ghi dữ liệu"],
+        "correctIndex": 0,
+        "explanation": "Event Sourcing ghi lại các sự kiện trên từng nút, giúp hệ thống phân tán đồng bộ hóa trạng thái và đảm bảo tính nhất quán cuối cùng (eventual consistency)."
+    },
+    {
+        "question": "Làm thế nào để xóa dữ liệu không còn cần thiết trong Event Sourcing?",
+        "answers": ["Sử dụng cơ chế snapshot và xóa sự kiện cũ", "Xóa toàn bộ Event Store", "Ghi đè lên các sự kiện cũ", "Không thể xóa dữ liệu"],
+        "correctIndex": 0,
+        "explanation": "Snapshot lưu trạng thái hiện tại và cho phép xóa các sự kiện cũ không còn cần thiết, giảm tải lưu trữ trong Event Store."
+    }
+
+
+]

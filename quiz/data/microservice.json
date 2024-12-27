@@ -1,0 +1,121 @@
+[{
+        "question": "Microservices thường được dùng trong loại kiến trúc nào?",
+        "answers": ["Monolithic", "Distributed", "Client-Server", "Peer-to-Peer"],
+        "correctIndex": 1,
+        "explanation": "Microservices được thiết kế để hoạt động tốt trong kiến trúc hệ thống phân tán (Distributed Architecture). Điều này cho phép các dịch vụ riêng lẻ hoạt động độc lập trên các máy chủ hoặc container khác nhau, giúp tăng khả năng mở rộng và linh hoạt trong triển khai. Các kiến trúc khác như Monolithic tập trung tất cả chức năng trong một ứng dụng duy nhất, dẫn đến khó mở rộng và bảo trì."
+    },
+    {
+        "question": "Một đặc điểm chính của Microservices là gì?",
+        "answers": ["Khả năng mở rộng độc lập", "Sử dụng một cơ sở dữ liệu duy nhất", "Được xây dựng bằng một ngôn ngữ lập trình duy nhất", "Không thể tích hợp với các hệ thống khác"],
+        "correctIndex": 0,
+        "explanation": "Khả năng mở rộng độc lập là một đặc điểm nổi bật của Microservices. Nó cho phép các nhóm phát triển triển khai và nâng cấp các dịch vụ riêng lẻ mà không làm gián đoạn toàn bộ hệ thống. Điều này khác với kiến trúc Monolithic, nơi tất cả các phần phụ thuộc vào nhau và việc thay đổi hoặc mở rộng rất phức tạp."
+    },
+    {
+        "question": "Microservices giao tiếp với nhau thông qua?",
+        "answers": ["Thư điện tử", "REST API", "Truyền thông mạng ngang hàng", "Bluetooth"],
+        "correctIndex": 1,
+        "explanation": "Các Microservices thường sử dụng REST API để giao tiếp nhờ tính linh hoạt và khả năng hỗ trợ nhiều định dạng dữ liệu như JSON hoặc XML. REST API hoạt động dựa trên giao thức HTTP, giúp dễ dàng triển khai trên hầu hết các nền tảng. Các giao thức như gRPC hoặc AMQP cũng có thể được sử dụng tùy thuộc vào yêu cầu cụ thể."
+    },
+    {
+        "question": "Service Discovery có vai trò gì trong Microservices?",
+        "answers": ["Theo dõi trạng thái của dịch vụ", "Định vị và kết nối các dịch vụ", "Lưu trữ dữ liệu cho các dịch vụ", "Bảo mật giao tiếp giữa các dịch vụ"],
+        "correctIndex": 1,
+        "explanation": "Service Discovery giúp định vị và kết nối các dịch vụ bằng cách cung cấp thông tin về địa chỉ và trạng thái của các dịch vụ đang chạy trong hệ thống. Nó cho phép các Microservices giao tiếp một cách linh hoạt, ngay cả khi chúng được triển khai trên các máy chủ hoặc container khác nhau. Công cụ phổ biến cho Service Discovery bao gồm Consul, Eureka và Zookeeper."
+    },
+    {
+        "question": "Một lợi ích chính của Microservices là gì?",
+        "answers": ["Cải thiện hiệu năng", "Dễ dàng phát triển và triển khai", "Giảm chi phí phần cứng", "Tăng bảo mật"],
+        "correctIndex": 1,
+        "explanation": "Microservices cho phép các nhóm phát triển làm việc độc lập trên các dịch vụ khác nhau, giảm thiểu xung đột trong mã nguồn và tăng tốc độ triển khai. Từng dịch vụ nhỏ gọn dễ bảo trì hơn và có thể được triển khai một cách riêng lẻ mà không ảnh hưởng đến toàn bộ hệ thống."
+    },
+    {
+        "question": "Microservices được xây dựng thường sử dụng nguyên tắc gì?",
+        "answers": ["Single Responsibility Principle", "Dependency Injection", "Code Duplication", "Global Variables"],
+        "correctIndex": 0,
+        "explanation": "Nguyên tắc Single Responsibility Principle là nguyên tắc chính trong việc xây dựng microservices. Theo nguyên tắc này, mỗi dịch vụ đảm nhiệm một chức năng cụ thể duy nhất, giúp đơn giản hóa việc bảo trì và mở rộng. Ví dụ, một dịch vụ xử lý thanh toán sẽ không bao gồm chức năng quản lý người dùng."
+    },
+    {
+        "question": "API Gateway có vai trò gì trong Microservices?",
+        "answers": ["Cung cấp một điểm truy cập duy nhất", "Lưu trữ dữ liệu", "Tăng tốc độ xử lý dữ liệu", "Bảo mật nội dung"],
+        "correctIndex": 0,
+        "explanation": "API Gateway đóng vai trò làm cầu nối giữa các client và các microservices trong hệ thống. Nó cung cấp một điểm truy cập duy nhất để quản lý yêu cầu, thực hiện cân bằng tải, và xử lý các chức năng như xác thực hoặc chuyển đổi dữ liệu trước khi chuyển tiếp tới microservices phù hợp."
+    },
+    {
+        "question": "Các Microservices nên được triển khai như thế nào?",
+        "answers": ["Trong một máy chủ duy nhất", "Mỗi dịch vụ trong một container riêng", "Cùng trên một cơ sở dữ liệu", "Tất cả các dịch vụ trong một VM"],
+        "correctIndex": 1,
+        "explanation": "Triển khai mỗi microservice trong một container riêng, như Docker, giúp đảm bảo tính độc lập của dịch vụ. Điều này cho phép dễ dàng mở rộng hoặc thay thế một dịch vụ mà không làm gián đoạn các dịch vụ khác, đồng thời hỗ trợ tính di động giữa các môi trường."
+    },
+    {
+        "question": "Microservices giải quyết vấn đề gì trong Monolithic Architecture?",
+        "answers": ["Tính phức tạp khi mở rộng", "Quản lý bảo mật", "Tăng tốc độ phát triển", "Giảm lỗi logic"],
+        "correctIndex": 0,
+        "explanation": "Kiến trúc Monolithic khó mở rộng vì tất cả các thành phần đều được tích hợp trong một ứng dụng lớn. Microservices giải quyết vấn đề này bằng cách chia nhỏ ứng dụng thành các dịch vụ độc lập, dễ dàng mở rộng theo chiều ngang (thêm dịch vụ mới) hoặc chiều dọc (nâng cấp dịch vụ hiện tại)."
+    },
+    {
+        "question": "Dịch vụ trong Microservices nên giao tiếp đồng bộ hay không đồng bộ?",
+        "answers": ["Chỉ đồng bộ", "Chỉ không đồng bộ", "Tùy thuộc vào yêu cầu hệ thống", "Không giao tiếp trực tiếp"],
+        "correctIndex": 2,
+        "explanation": "Các dịch vụ trong Microservices có thể giao tiếp đồng bộ hoặc không đồng bộ dựa trên yêu cầu hệ thống. Giao tiếp đồng bộ thường được sử dụng cho các yêu cầu ngay lập tức, ví dụ REST API. Trong khi đó, giao tiếp không đồng bộ sử dụng message queue (như RabbitMQ, Kafka) cho các tác vụ không yêu cầu phản hồi ngay."
+    },
+    {
+        "question": "Tại sao Microservices phù hợp với các nhóm phát triển lớn?",
+        "answers": ["Mỗi nhóm có thể quản lý một dịch vụ độc lập", "Giảm chi phí phát triển", "Dễ dàng chia sẻ mã nguồn giữa các nhóm", "Tăng tính bảo mật"],
+        "correctIndex": 0,
+        "explanation": "Microservices phù hợp với các nhóm lớn vì mỗi nhóm có thể phát triển, triển khai và bảo trì một dịch vụ độc lập mà không cần phụ thuộc vào các nhóm khác. Điều này giúp giảm xung đột và tăng hiệu quả làm việc."
+    },
+    {
+        "question": "Điều gì xảy ra nếu một Microservice bị lỗi?",
+        "answers": ["Toàn bộ hệ thống ngừng hoạt động", "Chỉ dịch vụ đó ngừng hoạt động", "Tất cả các dịch vụ phải khởi động lại", "Không ảnh hưởng đến hệ thống"],
+        "correctIndex": 1,
+        "explanation": "Khi một Microservice bị lỗi, chỉ dịch vụ đó bị ảnh hưởng, trong khi các dịch vụ khác vẫn hoạt động bình thường. Điều này nhờ vào tính độc lập của Microservices và việc sử dụng các công cụ như Circuit Breaker để giảm tác động lan tỏa."
+    },
+    {
+        "question": "Làm thế nào để cải thiện hiệu suất trong Microservices?",
+        "answers": ["Tăng kích thước dịch vụ", "Giảm số lượng dịch vụ", "Sử dụng caching và load balancing", "Tắt logging"],
+        "correctIndex": 2,
+        "explanation": "Hiệu suất của Microservices có thể được cải thiện bằng cách sử dụng caching để giảm tải yêu cầu đến dịch vụ và load balancing để phân phối yêu cầu đồng đều giữa các phiên bản dịch vụ. Ngoài ra, tối ưu hóa cơ sở dữ liệu và giảm số lượng giao tiếp giữa các dịch vụ cũng giúp tăng hiệu quả."
+    },
+    {
+        "question": "Tại sao các hệ thống Microservices thường sử dụng Container?",
+        "answers": ["Để tăng tính bảo mật", "Để đảm bảo sự nhất quán", "Để đóng gói và triển khai dễ dàng", "Để tăng tốc độ xử lý"],
+        "correctIndex": 2,
+        "explanation": "Container, như Docker, cung cấp một môi trường khép kín cho từng Microservice. Điều này giúp đóng gói tất cả phụ thuộc và đảm bảo rằng các dịch vụ chạy nhất quán trong mọi môi trường, từ phát triển đến sản xuất."
+    },
+    {
+        "question": "Circuit Breaker Pattern được sử dụng để làm gì?",
+        "answers": ["Ngăn chặn lỗi lan rộng", "Cải thiện hiệu năng", "Tối ưu hóa bộ nhớ", "Tăng tốc độ phát triển"],
+        "correctIndex": 0,
+        "explanation": "Circuit Breaker Pattern ngăn chặn các lỗi lan rộng bằng cách dừng yêu cầu đến một dịch vụ khi nó gặp sự cố, cho phép hệ thống tiếp tục hoạt động trong giới hạn nhất định mà không làm sụp đổ toàn bộ hệ thống."
+    },
+    {
+        "question": "Logging trong Microservices nên được thực hiện như thế nào?",
+        "answers": ["Tại từng dịch vụ riêng lẻ", "Tập trung qua một hệ thống quản lý log", "Không cần logging", "Chỉ lưu trữ log lỗi"],
+        "correctIndex": 1,
+        "explanation": "Logging tập trung, sử dụng các công cụ như ELK Stack (Elasticsearch, Logstash, Kibana), giúp thu thập và phân tích log từ nhiều dịch vụ. Điều này hỗ trợ việc giám sát và gỡ lỗi trong hệ thống Microservices phức tạp."
+    },
+    {
+        "question": "Rate Limiting trong API Gateway dùng để làm gì?",
+        "answers": ["Bảo vệ tài nguyên dịch vụ", "Tăng hiệu năng", "Giảm chi phí lưu trữ", "Hỗ trợ tính toán thời gian thực"],
+        "correctIndex": 0,
+        "explanation": "Rate Limiting giới hạn số lượng yêu cầu mà một client có thể gửi trong một khoảng thời gian. Điều này giúp bảo vệ tài nguyên dịch vụ khỏi bị quá tải và đảm bảo tính ổn định của hệ thống."
+    },
+    {
+        "question": "Làm thế nào để xử lý dữ liệu lớn trong hệ thống Microservices?",
+        "answers": ["Tăng kích thước từng dịch vụ", "Sử dụng message queue", "Sử dụng cơ sở dữ liệu duy nhất", "Tăng tài nguyên phần cứng"],
+        "correctIndex": 1,
+        "explanation": "Message queue, như Kafka hoặc RabbitMQ, giúp xử lý dữ liệu lớn bằng cách phân phối tải và xử lý các công việc không đồng bộ, giảm áp lực trực tiếp lên các dịch vụ."
+    },
+    {
+        "question": "Tại sao cần giám sát trạng thái của Microservices?",
+        "answers": ["Để giảm chi phí vận hành", "Để đảm bảo các dịch vụ hoạt động ổn định", "Để tăng tốc độ phát triển", "Để bảo mật dữ liệu"],
+        "correctIndex": 1,
+        "explanation": "Giám sát trạng thái dịch vụ, sử dụng các công cụ như Prometheus hoặc Grafana, giúp phát hiện sớm các vấn đề và đảm bảo hệ thống hoạt động ổn định."
+    },
+    {
+        "question": "Khi nào nên sử dụng giao tiếp không đồng bộ trong Microservices?",
+        "answers": ["Khi cần phản hồi ngay lập tức", "Khi xử lý dữ liệu lớn hoặc tác vụ phức tạp", "Khi giao tiếp với client", "Khi cần giảm số lượng dịch vụ"],
+        "correctIndex": 1,
+        "explanation": "Giao tiếp không đồng bộ phù hợp khi xử lý dữ liệu lớn hoặc các tác vụ không yêu cầu phản hồi ngay lập tức. Nó giúp giảm độ trễ và tăng hiệu quả của hệ thống."
+    }
+]

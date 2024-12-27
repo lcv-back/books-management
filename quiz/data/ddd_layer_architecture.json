@@ -1,0 +1,174 @@
+[{
+        "question": "Trong kiến trúc DDD, lớp nào chịu trách nhiệm trực tiếp xử lý các quy tắc nghiệp vụ cốt lõi?",
+        "answers": ["Application Layer", "Domain Layer", "Infrastructure Layer", "Presentation Layer"],
+        "correctIndex": 1,
+        "explanation": "Domain Layer là trung tâm của DDD, nơi chứa các quy tắc nghiệp vụ cốt lõi và logic liên quan đến lĩnh vực cụ thể. Đây là nơi các Entity, Value Object và Aggregate Root được định nghĩa."
+    },
+    {
+        "question": "Lớp Application trong DDD đảm nhiệm vai trò gì?",
+        "answers": ["Chứa logic giao diện người dùng", "Quản lý quy trình nghiệp vụ", "Cung cấp dịch vụ hệ thống như gửi email", "Lưu trữ dữ liệu vào cơ sở dữ liệu"],
+        "correctIndex": 1,
+        "explanation": "Application Layer quản lý quy trình nghiệp vụ, điều phối giữa các lớp khác, nhưng không chứa logic nghiệp vụ cốt lõi. Nó chủ yếu thực hiện các trường hợp sử dụng (use cases)."
+    },
+    {
+        "question": "Trong DDD, lớp nào thường làm việc với cơ sở dữ liệu hoặc các hệ thống bên ngoài?",
+        "answers": ["Domain Layer", "Application Layer", "Infrastructure Layer", "Presentation Layer"],
+        "correctIndex": 2,
+        "explanation": "Infrastructure Layer đảm nhiệm việc tương tác với cơ sở dữ liệu, API bên ngoài hoặc các dịch vụ hệ thống. Đây là nơi thực hiện các tác vụ như lưu trữ dữ liệu và gửi/nhận tin nhắn."
+    },
+    {
+        "question": "Pattern nào thường được sử dụng trong DDD để quản lý truy cập dữ liệu?",
+        "answers": ["Repository Pattern", "Observer Pattern", "Factory Pattern", "Decorator Pattern"],
+        "correctIndex": 0,
+        "explanation": "Repository Pattern được sử dụng trong DDD để cung cấp một giao diện truy cập dữ liệu và ẩn chi tiết triển khai của cơ sở dữ liệu. Nó giúp giữ cho Domain Layer không phụ thuộc vào Infrastructure Layer."
+    }, {
+        "question": "Trong DDD, Aggregates được định nghĩa trong lớp nào?",
+        "answers": ["Application Layer", "Domain Layer", "Infrastructure Layer", "Presentation Layer"],
+        "correctIndex": 1,
+        "explanation": "Aggregates là một tập hợp các Entity và Value Object được định nghĩa trong Domain Layer. Chúng đảm bảo tính nhất quán trong ranh giới nghiệp vụ cốt lõi."
+    }, {
+        "question": "Lớp Presentation trong DDD chủ yếu xử lý gì?",
+        "answers": ["Logic nghiệp vụ", "Giao tiếp với cơ sở dữ liệu", "Hiển thị giao diện người dùng và xử lý đầu vào", "Xử lý quy trình nghiệp vụ"],
+        "correctIndex": 2,
+        "explanation": "Presentation Layer trong DDD chịu trách nhiệm hiển thị giao diện người dùng và xử lý các sự kiện từ đầu vào của người dùng."
+    }, {
+        "question": "Trong DDD, đâu là lý do chính để sử dụng các lớp phân tầng?",
+        "answers": ["Tăng hiệu suất hệ thống", "Tách biệt trách nhiệm giữa các phần khác nhau của ứng dụng", "Giảm chi phí triển khai", "Hỗ trợ nhiều ngôn ngữ lập trình"],
+        "correctIndex": 1,
+        "explanation": "Lớp phân tầng trong DDD được sử dụng để tách biệt trách nhiệm rõ ràng giữa các phần khác nhau của ứng dụng, giúp dễ dàng bảo trì, mở rộng và kiểm thử."
+    }, {
+        "question": "Value Object trong DDD có đặc điểm nào sau đây?",
+        "answers": ["Không thể thay đổi (Immutable)", "Có định danh duy nhất", "Chỉ được dùng trong Application Layer", "Chứa các logic truy vấn cơ sở dữ liệu"],
+        "correctIndex": 0,
+        "explanation": "Value Object trong DDD là không thể thay đổi (Immutable) và được sử dụng để biểu diễn các khái niệm nghiệp vụ mà không cần định danh duy nhất."
+    },
+    {
+        "question": "Factory trong DDD được sử dụng để làm gì?",
+        "answers": ["Quản lý vòng đời của Entity", "Tạo các đối tượng phức tạp", "Lưu trữ và truy xuất dữ liệu", "Hiển thị giao diện người dùng"],
+        "correctIndex": 1,
+        "explanation": "Factory trong DDD được sử dụng để tạo ra các đối tượng phức tạp hoặc các Aggregates mà cần tuân theo các quy tắc nghiệp vụ khi khởi tạo."
+    },
+    {
+        "question": "Trong DDD, sự phụ thuộc giữa các lớp thường theo hướng nào?",
+        "answers": ["Từ lớp Domain đến lớp Infrastructure", "Từ lớp Presentation đến lớp Domain", "Từ lớp Application đến lớp Domain", "Từ lớp Infrastructure đến lớp Presentation"],
+        "correctIndex": 2,
+        "explanation": "Trong DDD, các lớp Application và Presentation phụ thuộc vào Domain Layer vì Domain là trung tâm của nghiệp vụ. Infrastructure Layer lại phụ thuộc vào Domain và Application để thực hiện các tác vụ kỹ thuật."
+    }, {
+        "question": "Entity trong DDD khác với Value Object ở điểm nào?",
+        "answers": ["Entity có định danh duy nhất, Value Object thì không", "Entity chứa dữ liệu đơn giản, Value Object phức tạp hơn", "Entity chỉ tồn tại trong Application Layer", "Entity không thể thay đổi (Immutable)"],
+        "correctIndex": 0,
+        "explanation": "Entity trong DDD có định danh duy nhất (ID), cho phép phân biệt các đối tượng ngay cả khi chúng có cùng giá trị. Trong khi đó, Value Object không có định danh duy nhất và thường là Immutable."
+    },
+    {
+        "question": "Trong DDD, Aggregate Root có vai trò gì?",
+        "answers": ["Đại diện cho toàn bộ Aggregate và kiểm soát tính nhất quán", "Tương tác với cơ sở dữ liệu", "Thực hiện các tác vụ giao diện", "Chỉ tồn tại trong Application Layer"],
+        "correctIndex": 0,
+        "explanation": "Aggregate Root là điểm đầu vào duy nhất cho toàn bộ Aggregate, đảm bảo rằng tất cả các thay đổi trong Aggregate tuân thủ các quy tắc nghiệp vụ."
+    },
+    {
+        "question": "Trong DDD, khái niệm Bounded Context nhằm mục đích gì?",
+        "answers": ["Giới hạn phạm vi nghiệp vụ của một nhóm quy tắc", "Tăng hiệu năng hệ thống", "Tách biệt giữa Domain Layer và Infrastructure Layer", "Giảm độ phức tạp trong Application Layer"],
+        "correctIndex": 0,
+        "explanation": "Bounded Context trong DDD giúp giới hạn phạm vi nghiệp vụ và định nghĩa các thuật ngữ rõ ràng trong một ngữ cảnh cụ thể, tránh sự chồng chéo với các ngữ cảnh khác."
+    },
+    {
+        "question": "Service trong Domain Layer thường làm nhiệm vụ gì?",
+        "answers": ["Thực hiện logic nghiệp vụ không thuộc về bất kỳ Entity hoặc Value Object nào", "Cung cấp API cho giao diện người dùng", "Kết nối với cơ sở dữ liệu", "Quản lý quy trình nghiệp vụ"],
+        "correctIndex": 0,
+        "explanation": "Domain Service trong Domain Layer thực hiện các logic nghiệp vụ phức tạp không thuộc về một Entity hoặc Value Object cụ thể."
+    },
+    {
+        "question": "Trong DDD, khi nào cần sử dụng CQRS (Command Query Responsibility Segregation)?",
+        "answers": ["Khi cần tối ưu hóa hiệu suất đọc và ghi", "Khi không có quy tắc nghiệp vụ phức tạp", "Khi muốn đơn giản hóa Domain Layer", "Khi không cần sử dụng Infrastructure Layer"],
+        "correctIndex": 0,
+        "explanation": "CQRS tách biệt logic đọc (Query) và ghi (Command), giúp tối ưu hóa hiệu suất cho các hệ thống có nhu cầu đọc và ghi không đồng đều."
+    },
+    {
+        "question": "Anti-corruption Layer (ACL) trong DDD có vai trò gì?",
+        "answers": ["Chuyển đổi dữ liệu giữa hai Bounded Context khác nhau", "Bảo mật thông tin trong cơ sở dữ liệu", "Kiểm tra dữ liệu nhập vào Presentation Layer", "Quản lý các giao dịch dữ liệu lớn"],
+        "correctIndex": 0,
+        "explanation": "Anti-corruption Layer (ACL) là lớp trung gian giúp chuyển đổi dữ liệu giữa hai Bounded Context, tránh sự phụ thuộc trực tiếp và bảo vệ tính toàn vẹn của hệ thống."
+    },
+    {
+        "question": "Trong DDD, Shared Kernel là gì?",
+        "answers": ["Phần chung được chia sẻ giữa nhiều Bounded Context", "Một lớp trong Infrastructure Layer", "Một kỹ thuật lưu trữ dữ liệu hiệu quả", "Một cách tối ưu hóa Aggregate"],
+        "correctIndex": 0,
+        "explanation": "Shared Kernel là một phần nghiệp vụ chung được chia sẻ giữa hai hoặc nhiều Bounded Context, thường bao gồm các Value Object hoặc các Entity cơ bản."
+    },
+    {
+        "question": "Trong DDD, chiến lược nào giúp giảm sự phụ thuộc giữa các lớp?",
+        "answers": ["Dependency Inversion Principle", "Singleton Pattern", "Observer Pattern", "Decorator Pattern"],
+        "correctIndex": 0,
+        "explanation": "Dependency Inversion Principle (DIP) là nguyên tắc giúp giảm sự phụ thuộc giữa các lớp bằng cách dựa vào các abstraction thay vì implementation cụ thể."
+    },
+    {
+        "question": "Value Object trong DDD thường được sử dụng để làm gì?",
+        "answers": ["Đại diện cho các khái niệm nghiệp vụ như tiền tệ, địa chỉ", "Quản lý vòng đời của một Aggregate", "Tạo truy vấn dữ liệu", "Thực hiện các quy trình nghiệp vụ"],
+        "correctIndex": 0,
+        "explanation": "Value Object trong DDD đại diện cho các khái niệm nghiệp vụ, như tiền tệ hoặc địa chỉ, nơi giá trị quan trọng hơn định danh."
+    },
+    {
+        "question": "Một Domain Event trong DDD có đặc điểm gì?",
+        "answers": ["Đại diện cho một sự kiện nghiệp vụ đã xảy ra", "Chứa logic giao diện người dùng", "Quản lý giao dịch cơ sở dữ liệu", "Không thể tái sử dụng"],
+        "correctIndex": 0,
+        "explanation": "Domain Event đại diện cho một sự kiện nghiệp vụ đã xảy ra và có thể được dùng để thông báo các phần khác của hệ thống thực hiện các hành động liên quan."
+    }, {
+        "question": "Tại sao Aggregate nên được thiết kế để giữ kích thước nhỏ?",
+        "answers": ["Để giảm độ phức tạp và đảm bảo tính nhất quán", "Để tăng hiệu suất giao diện người dùng", "Để tối ưu hóa tốc độ đọc dữ liệu", "Để giảm sự phụ thuộc vào Application Layer"],
+        "correctIndex": 0,
+        "explanation": "Aggregate nên nhỏ để giữ cho các quy tắc nghiệp vụ đơn giản và đảm bảo tính nhất quán trong phạm vi của nó, tránh tải trọng lớn khi thao tác dữ liệu."
+    },
+    {
+        "question": "Command trong DDD được sử dụng để làm gì?",
+        "answers": ["Thực hiện các hành động thay đổi trạng thái hệ thống", "Truy vấn thông tin từ cơ sở dữ liệu", "Tạo giao diện người dùng", "Lưu trữ thông tin tạm thời"],
+        "correctIndex": 0,
+        "explanation": "Command là một đối tượng được sử dụng để biểu diễn một hành động thay đổi trạng thái trong hệ thống. Nó không trả về dữ liệu, mà chỉ thực hiện hành động."
+    },
+    {
+        "question": "Query trong DDD có đặc điểm gì?",
+        "answers": ["Không thay đổi trạng thái của hệ thống", "Thực hiện thay đổi dữ liệu", "Chỉ tồn tại trong Domain Layer", "Cần có Entity để thực hiện"],
+        "correctIndex": 0,
+        "explanation": "Query được sử dụng để truy vấn thông tin mà không thay đổi trạng thái của hệ thống, phù hợp với nguyên tắc CQRS."
+    },
+    {
+        "question": "Trong DDD, mối quan hệ giữa các Bounded Context được quản lý bằng cách nào?",
+        "answers": ["Context Map", "Shared Database", "Application Layer", "CQRS"],
+        "correctIndex": 0,
+        "explanation": "Context Map giúp quản lý mối quan hệ và sự tương tác giữa các Bounded Context, bao gồm các kiểu quan hệ như Partnership, Shared Kernel hoặc Anti-corruption Layer."
+    },
+    {
+        "question": "Event Sourcing trong DDD có lợi ích gì?",
+        "answers": ["Lưu giữ toàn bộ lịch sử thay đổi trạng thái", "Tăng hiệu năng đọc dữ liệu", "Loại bỏ sự cần thiết của Infrastructure Layer", "Tối ưu hóa giao diện người dùng"],
+        "correctIndex": 0,
+        "explanation": "Event Sourcing ghi lại mọi thay đổi trạng thái dưới dạng các sự kiện, cho phép truy vết lịch sử thay đổi và dễ dàng khôi phục trạng thái hệ thống."
+    },
+    {
+        "question": "Trong DDD, lớp nào đảm bảo rằng các quy trình nghiệp vụ được thực thi theo đúng thứ tự?",
+        "answers": ["Application Layer", "Domain Layer", "Infrastructure Layer", "Presentation Layer"],
+        "correctIndex": 0,
+        "explanation": "Application Layer quản lý luồng công việc và đảm bảo các quy trình nghiệp vụ được thực thi đúng theo thứ tự, nhưng không chứa logic nghiệp vụ cốt lõi."
+    },
+    {
+        "question": "Những thành phần nào thường được định nghĩa trong Domain Layer?",
+        "answers": ["Entity, Value Object, Domain Event", "Controller, Repository, Command", "Service, Database, API", "Query, Command, Event Handler"],
+        "correctIndex": 0,
+        "explanation": "Domain Layer chứa các thành phần cốt lõi như Entity, Value Object và Domain Event, là nền tảng của quy tắc nghiệp vụ."
+    }, {
+        "question": "Trong DDD, tại sao cần tách biệt các lớp Application và Domain?",
+        "answers": ["Để tăng khả năng tái sử dụng và duy trì", "Để cải thiện hiệu suất của hệ thống", "Để giảm số lượng Entity cần thiết", "Để loại bỏ sự cần thiết của Infrastructure Layer"],
+        "correctIndex": 0,
+        "explanation": "Việc tách biệt Application Layer và Domain Layer giúp tăng khả năng tái sử dụng, duy trì, và giữ cho Domain độc lập với các quy trình cụ thể."
+    },
+    {
+        "question": "Khi nào nên sử dụng Domain Event trong DDD?",
+        "answers": ["Khi một sự kiện quan trọng cần được thông báo đến các phần khác của hệ thống", "Khi cần lưu trữ trạng thái tạm thời", "Khi tạo giao diện người dùng", "Khi quản lý các truy vấn dữ liệu phức tạp"],
+        "correctIndex": 0,
+        "explanation": "Domain Event được sử dụng để thông báo các sự kiện nghiệp vụ quan trọng cho các phần khác của hệ thống, như cập nhật trạng thái hoặc kích hoạt các hành động khác."
+    },
+    {
+        "question": "Trong DDD, Infrastructure Layer nên phụ thuộc vào những lớp nào?",
+        "answers": ["Application và Domain Layer", "Presentation Layer", "Application Layer duy nhất", "Không phụ thuộc vào lớp nào"],
+        "correctIndex": 0,
+        "explanation": "Infrastructure Layer phụ thuộc vào Application và Domain Layer để thực hiện các tác vụ kỹ thuật như lưu trữ, gửi email, hoặc giao tiếp với hệ thống bên ngoài."
+    }
+]
