@@ -24,11 +24,11 @@ It's a library management system. It covers every aspect and every task that lib
 
 ## 3. Use Case: Quản lý thư viện
 
-![Alt text](../learning/usecase.png)
+![Alt text](../learning/assets/usecase.png)
 
 ## 4. Class Diagram
 
-![Alt text](../learning/class-diagram.png)
+![Alt text](../learning/assets/class-diagram.png)
 
 ## 5. API Description
 
@@ -67,7 +67,7 @@ Used to send notifications to employees once
 
 ## 6. Architecture
 
-![Alt text](../learning/architecture.png)
+![Alt text](../learning/assets/architecture.png)
 
 ## 7. Where to apply the design principles?
 
@@ -76,3 +76,25 @@ Used to send notifications to employees once
   - 1. Create a record in the borrowing table
   - 2. Update status of book to false
   - 3. Employee who is not disciplined is valid for borrowing a book
+
+## 8. References
+
+### i. How to implement CQRS
+
+- https://progressivecoder.com/event-sourcing-and-cqrs-with-axon-and-spring-boot-part-1/
+
+- https://progressivecoder.com/implementing-event-sourcing-using-axon-and-spring-boot-part-1/
+- https://progressivecoder.com/implementing-event-sourcing-with-axon-and-spring-boot-part-2//
+- https://progressivecoder.com/implementing-event-sourcing-with-axon-and-spring-boot-part-3//
+
+### ii. How to implement SAGA (orchestration-based Saga)
+
+- https://progressivecoder.com/wp-content/cache/all/saga-pattern-implementation-with-axon-and-spring-boot-part-1/index.html
+
+- https://progressivecoder.com/saga-pattern-implementation-axon-spring-boot-part-2/
+- https://progressivecoder.com/saga-pattern-implementation-axon-spring-boot-part-3/
+- https://progressivecoder.com/saga-pattern-implementation-with-axon-and-spring-boot-part-4/
+
+## 9. Minimum Microservice architecture for reference
+
+![Alt text](../learning/assets/spring-boot-microservice.png)
